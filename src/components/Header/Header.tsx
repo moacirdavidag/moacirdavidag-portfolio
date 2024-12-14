@@ -1,7 +1,7 @@
 import React from "react";
 import { HeaderButtons, HeaderWrapper, NavLinks } from "./style";
 import { useTheme } from "../../hooks/theme";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import ContrastIcon from "@mui/icons-material/Contrast";
 import { Tooltip } from "@mui/material";
@@ -58,7 +58,7 @@ const Header = () => {
           />
         </Tooltip>
 
-        <button>Fale comigo</button>
+        <Link to={"https://wa.me/5583988515604"} target="_blank"><button>Fale comigo</button></Link>
       </HeaderButtons>
     </HeaderWrapper>
   );
