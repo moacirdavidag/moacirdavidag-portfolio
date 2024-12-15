@@ -1,17 +1,22 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
-import 'animate.css';
+import "animate.css";
+import About from "./pages/About";
+import { useTheme } from "./hooks/theme";
 
 function App() {
+  const { theme } = useTheme();
 
   return (
-    <BrowserRouter>
-      <Routes>
+    <div className="container-app" style={{background: theme.colors.background}}>
+      <BrowserRouter>
+        <Routes>
           <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

@@ -10,11 +10,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 
 import MoacirDavid from "../../assets/img/moacir_david.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const { theme } = useTheme();
-  const navigate = useNavigate();
 
   return (
     <HomeWrapper

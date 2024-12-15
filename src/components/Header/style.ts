@@ -4,13 +4,14 @@ interface NavLinksProps {
   $color: string;
   $hover?: string;
   $isLinkActive?: boolean;
+  $linkColor?: string;
 }
 
 interface ButtonCtaProps {
-    $background: string;
-    $color: string;
-    $backgroundHover: string;
-    $hover: string;
+  $background: string;
+  $color: string;
+  $backgroundHover: string;
+  $hover: string;
 }
 
 export const HeaderWrapper = styled.header`
@@ -19,6 +20,11 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   justify-content: space-around;
   padding: 24px;
+  #logo {
+    max-width: 100px;
+    height: auto;
+    cursor: pointer;
+  }
 `;
 
 export const NavLinks = styled.nav<NavLinksProps>`
@@ -39,6 +45,9 @@ export const NavLinks = styled.nav<NavLinksProps>`
       color: ${({ $hover }) => $hover};
     }
   }
+  ul li.link-active {
+    border-bottom: 4px solid ${({ $linkColor }) => $linkColor};
+  }
 `;
 
 export const HeaderButtons = styled.div<ButtonCtaProps>`
@@ -54,11 +63,11 @@ export const HeaderButtons = styled.div<ButtonCtaProps>`
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    color: #FFF;
-    background: ${({$background}) => $background};
+    color: #fff;
+    background: ${({ $background }) => $background};
     &:hover {
-        transition: 300ms ease-in-out;
-        background: ${({$backgroundHover}) => $backgroundHover};
+      transition: 300ms ease-in-out;
+      background: ${({ $backgroundHover }) => $backgroundHover};
     }
   }
 `;
