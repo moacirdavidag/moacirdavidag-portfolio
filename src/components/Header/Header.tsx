@@ -7,10 +7,10 @@ import ContrastIcon from "@mui/icons-material/Contrast";
 import { Tooltip } from "@mui/material";
 
 import Logo from "../../assets/img/MD_LOGO_TRANSPARENTE.png";
+import LogoEscuro from "../../assets/img/MD_LOGO_TRANSPARENTE_ESCURO.png";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
-  const [actualRoute, setActualRoute] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -18,14 +18,11 @@ const Header = () => {
     navigate(`${route}`);
   };
 
-  useEffect(() => {
-    setActualRoute(location.pathname);
-  }, []);
 
   return (
     <HeaderWrapper>
       <div className="logo-div">
-        <img src={Logo} alt="Moacir David - Logo" id="logo" onClick={() => {
+        <img src={theme.name === "lightTheme" ? LogoEscuro : Logo} alt="Moacir David - Logo" id="logo" onClick={() => {
           navigate('/');
         }} />
       </div>
