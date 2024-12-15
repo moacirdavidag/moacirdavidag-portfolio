@@ -59,12 +59,12 @@ const Header = () => {
           >
             Portfólio
           </li>
-          <li
+          {/* <li
             className={location.pathname === "/contact" ? "link-active" : ""}
             onClick={() => handleNavigateApplication("/contact")}
           >
             Contato
-          </li>
+          </li> */}
         </ul>
       </NavLinks>
 
