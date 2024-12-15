@@ -36,12 +36,13 @@ const Projects = () => {
         <Grid
           container
           width={"100%"}
+          spacing={2}
+          direction={{ xs: "column", sm: "row" }}
           className="animate__animated animate__fadeInLeft"
         >
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -72,10 +73,9 @@ const Projects = () => {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -107,10 +107,9 @@ const Projects = () => {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -176,10 +175,9 @@ const Projects = () => {
           width={"100%"}
           className="animate__animated animate__fadeInLeft"
         >
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -208,10 +206,9 @@ const Projects = () => {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -241,10 +238,9 @@ const Projects = () => {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}

@@ -1,7 +1,13 @@
 import React from "react";
 import Container from "../../components/Container";
 import Header from "../../components/Header";
-import { Box, Grid, Stack } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Stack,
+  useMediaQuery,
+  useTheme as useThemeMUI,
+} from "@mui/material";
 import LinearProgress from "@mui/joy/LinearProgress";
 
 import vetorDev from "../../assets/img/vetor_dev.png";
@@ -31,22 +37,30 @@ import {
 } from "@mui/lab";
 const About = () => {
   const { theme } = useTheme();
+  const themeMUI = useThemeMUI();
+
+  const isSmallScreen = useMediaQuery(themeMUI.breakpoints.down("sm"));
+
+  const fontSize = isSmallScreen ? 10 : 14;
 
   return (
     <AboutWrapper>
       <Container>
         <Header />
-        <Grid container width={"100%"}>
-          <Grid item xs={6}>
+        <Grid container width={"100%"} direction={{ xs: "column", sm: "row" }}>
+          <Grid item xs={6} sm={3}>
             <img
               src={vetorDev}
               alt="Ilustração de um programador em um computador"
-              className="animate__animated animate__fadeInLeft"
+              className="vetor-dev animate__animated animate__fadeInLeft"
+              width={"100%"}
+              height={"auto"}
             />
           </Grid>
           <Grid
             item
             xs={6}
+            sm={3}
             display={"flex"}
             flexDirection={"column"}
             gap={"24px"}
@@ -69,29 +83,47 @@ const About = () => {
               <AboutListItem
                 title="Nome:"
                 description="Moacir David de Almeida Gonçalves"
+                fontSize={fontSize}
               />
-              <AboutListItem title="Idade:" description="22" />
+              <AboutListItem
+                title="Idade:"
+                description="22"
+                fontSize={fontSize}
+              />
               <AboutListItem
                 title="Formação:"
                 description="Tecnólogo em Análise e Desenvolvimento de Sistemas - IFPB Campus Cajazeiras"
+                fontSize={fontSize}
               />
-              <AboutListItem title="Nacionalidade:" description="Brasileiro" />
+              <AboutListItem
+                title="Nacionalidade:"
+                description="Brasileiro"
+                fontSize={fontSize}
+              />
               <AboutListItem
                 title="Idiomas:"
                 description="Português (nativo, fluente); Inglês (conversação)"
+                fontSize={fontSize}
               />
               <AboutListItem
                 title="Disponível para Freelance:"
                 description="Sim"
+                fontSize={fontSize}
               />
               <AboutListItem
                 title="Contato/WhatsApp:"
                 description="+55 (83) 98851-5604"
+                fontSize={fontSize}
               />
             </Stack>
           </Grid>
         </Grid>
-        <Grid container width={"100%"} my={4}>
+        <Grid
+          container
+          width={"100%"}
+          my={4}
+          direction={{ xs: "column", sm: "row" }}
+        >
           <Grid item xs={6}>
             <PageTitle
               title="Minhas habilidades"
@@ -107,61 +139,76 @@ const About = () => {
             >
               <AboutListItem
                 title="JavaScript/NodeJs"
-                fontSize={14}
+                fontSize={fontSize}
                 icon={<JavascriptIcon />}
                 description={<LinearProgress determinate value={100} />}
               />
               <AboutListItem
                 title="React / React Native"
-                fontSize={14}
+                fontSize={fontSize}
                 icon={<CodeOffIcon />}
                 description={<LinearProgress determinate value={90} />}
               />
               <AboutListItem
                 title="Banco de Dados Relacional (MySQL) e MongoDB"
-                fontSize={14}
+                fontSize={fontSize}
                 icon={<StorageIcon />}
                 description={<LinearProgress determinate value={80} />}
               />
               <AboutListItem
                 title="Docker e práticas de CI/CD"
-                fontSize={14}
+                fontSize={fontSize}
                 icon={<BuildIcon />}
                 description={<LinearProgress determinate value={70} />}
               />
               <AboutListItem
                 title="Desenvolvimento Web"
-                fontSize={14}
+                fontSize={fontSize}
                 icon={<LanguageIcon />}
                 description={<LinearProgress determinate value={100} />}
               />
               <AboutListItem
                 title="Desenvolvimento Mobile"
-                fontSize={14}
+                fontSize={fontSize}
                 icon={<SmartphoneIcon />}
                 description={<LinearProgress determinate value={80} />}
               />
               <AboutListItem
                 title="Trabalho em equipe"
-                fontSize={14}
+                fontSize={fontSize}
                 icon={<GroupsIcon />}
                 description={<LinearProgress determinate value={90} />}
               />
               <AboutListItem
                 title="Comunicação"
-                fontSize={14}
+                fontSize={fontSize}
                 icon={<ChatBubbleIcon />}
                 description={<LinearProgress determinate value={80} />}
               />
             </Stack>
           </Grid>
-          <Grid item xs={6} alignItems={"flex-end"} justifyContent={"flex-end"} display={"flex"} flexDirection={"column"}>
+          <Grid
+            item
+            xs={6}
+            sm={3}
+            alignItems={isSmallScreen ? "flex-start" : "flex-end"}
+            justifyContent={isSmallScreen ? "flex-start" : "flex-end"}
+            display={"flex"}
+            flexDirection={"column"}
+            my={isSmallScreen ? 2 : 0}
+          >
             <PageTitle
               title="Experiências"
               fontSize={20}
               icon={<DescriptionIcon />}
             />
-            <Box paddingLeft={2} width={"100%"} display={"flex"} alignItems={"flex-end"} justifyContent={"flex-end"}>
+            <Box
+              paddingLeft={2}
+              width={"100%"}
+              display={"flex"}
+              alignItems={isSmallScreen ? "flex-start" : "flex-end"}
+              justifyContent={isSmallScreen ? "flex-start" : "flex-end"}
+            >
               <Timeline
                 sx={{ width: "100%" }}
                 className="animate__animated animate__fadeInRight"
@@ -171,20 +218,31 @@ const About = () => {
                     <TimelineDot />
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent><strong>Desenvolvedor Full Stack</strong> | CEA Artes Eletrônicas - Dezembro 2023 - Emprego atual</TimelineContent>
+                  <TimelineContent>
+                    <strong>Desenvolvedor Full Stack</strong> | CEA Artes
+                    Eletrônicas - Dezembro 2023 - Emprego atual
+                  </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                   <TimelineSeparator>
                     <TimelineDot />
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent><strong>Desenvolvedor Front-End</strong> | Jornal Poder360 - Julho de 2024 à Outubro de 2024 - Projeto temporário das eleições 2024</TimelineContent>
+                  <TimelineContent>
+                    <strong>Desenvolvedor Front-End</strong> | Jornal Poder360 -
+                    Julho de 2024 à Outubro de 2024 - Projeto temporário das
+                    eleições 2024
+                  </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                   <TimelineSeparator>
                     <TimelineDot />
                   </TimelineSeparator>
-                  <TimelineContent><strong>Estagiário no Setor de Informática</strong> da Prefeitura de Marizópolis - PB | Março de 2023 à Setembro de 2023</TimelineContent>
+                  <TimelineContent>
+                    <strong>Estagiário no Setor de Informática</strong> da
+                    Prefeitura de Marizópolis - PB | Março de 2023 à Setembro de
+                    2023
+                  </TimelineContent>
                 </TimelineItem>
               </Timeline>
             </Box>

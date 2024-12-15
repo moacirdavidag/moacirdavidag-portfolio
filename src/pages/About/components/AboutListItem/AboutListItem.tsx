@@ -3,13 +3,18 @@ import React from "react";
 import { useTheme } from "../../../../hooks/theme";
 
 type AboutListItemProps = {
-    title: string;
-    description: string | React.ReactNode;
-    fontSize?: number;
-    icon?: React.ReactNode
-}
+  title: string;
+  description: string | React.ReactNode;
+  fontSize?: number;
+  icon?: React.ReactNode;
+};
 
-const AboutListItem = ({title, description, fontSize, icon}: AboutListItemProps) => {
+const AboutListItem = ({
+  title,
+  description,
+  fontSize,
+  icon,
+}: AboutListItemProps) => {
   const { theme } = useTheme();
 
   return (
@@ -18,13 +23,26 @@ const AboutListItem = ({title, description, fontSize, icon}: AboutListItemProps)
       flexDirection={"row"}
       justifyContent={"space-between"}
       alignItems={"center"}
+      sx={{
+        "@media screen and (max-width: 480px)": {
+          fontSize: "10px",
+        },
+      }}
     >
-        <Box width={"50%"} sx={{fontSize: fontSize ? `${fontSize}px` : "18px", fontWeight: 600, gap: "4px", display: "flex"}}>
-            {icon ? icon : null} <span>{title}</span>
-        </Box>
-        <Box width={"50%"} sx={{fontSize: fontSize ? `${fontSize}px` : "18px"}}>
-            {description}
-        </Box>
+      <Box
+        width={"50%"}
+        sx={{
+          fontSize: fontSize ? `${fontSize}px` : "18px",
+          fontWeight: 600,
+          gap: "4px",
+          display: "flex",
+        }}
+      >
+        {icon ? icon : null} <span>{title}</span>
+      </Box>
+      <Box width={"50%"} sx={{ fontSize: fontSize ? `${fontSize}px` : "18px" }}>
+        {description}
+      </Box>
     </Stack>
   );
 };

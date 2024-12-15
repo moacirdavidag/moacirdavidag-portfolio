@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { HeaderButtons, HeaderWrapper, NavLinks } from "./style";
+import { HeaderButtons, HeaderWrapper, MobileMenu, NavLinks } from "./style";
 import { useTheme } from "../../hooks/theme";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import ContrastIcon from "@mui/icons-material/Contrast";
-import { Tooltip } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { Drawer, Tooltip } from "@mui/material";
 
 import Logo from "../../assets/img/MD_LOGO_TRANSPARENTE.png";
 import LogoEscuro from "../../assets/img/MD_LOGO_TRANSPARENTE_ESCURO.png";
@@ -13,18 +15,28 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleNavigateApplication = (route: string) => {
     navigate(`${route}`);
+    setIsMenuOpen(false);
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <HeaderWrapper>
       <div className="logo-div">
-        <img src={theme.name === "lightTheme" ? LogoEscuro : Logo} alt="Moacir David - Logo" id="logo" onClick={() => {
-          navigate('/');
-        }} />
+        <img
+          src={theme.name === "lightTheme" ? LogoEscuro : Logo}
+          alt="Moacir David - Logo"
+          id="logo"
+          onClick={() => {
+            navigate("/");
+          }}
+        />
       </div>
 
       <NavLinks
@@ -95,7 +107,62 @@ const Header = () => {
         <Link to={"https://wa.me/5583988515604"} target="_blank">
           <button>Fale comigo</button>
         </Link>
+
+        <MenuIcon
+          sx={{
+            display: "none",
+            cursor: "pointer",
+            "@media screen and (max-width: 480px)": {
+              display: "block",
+            },
+          }}
+          onClick={() => setIsMenuOpen(true)}
+        />
       </HeaderButtons>
+      <Drawer
+        anchor="right"
+        open={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+      >
+        <MobileMenu
+          $color={theme.colors.textPrimary}
+          $hover={theme.colors.links}
+          $linkColor={theme.colors.links}
+        >
+          <CloseIcon
+            className="close-icon"
+            onClick={() => setIsMenuOpen(false)}
+          />
+          <ul>
+            <li
+              className={location.pathname === "/" ? "link-active" : ""}
+              onClick={() => handleNavigateApplication("/")}
+            >
+              Home
+            </li>
+            <li
+              className={location.pathname === "/about" ? "link-active" : ""}
+              onClick={() => handleNavigateApplication("/about")}
+            >
+              Sobre mim
+            </li>
+            <li
+              className={
+                location.pathname === "/certificates" ? "link-active" : ""
+              }
+              onClick={() => handleNavigateApplication("/certificates")}
+            >
+              Certificados
+            </li>
+            <li
+              className={location.pathname === "/projects" ? "link-active" : ""}
+              onClick={() => handleNavigateApplication("/projects")}
+            >
+              Portfólio
+            </li>
+          </ul>
+        </MobileMenu>
+      </Drawer>
     </HeaderWrapper>
   );
 };

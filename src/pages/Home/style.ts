@@ -12,7 +12,8 @@ interface HomeProfileProps {
 
 export const HomeWrapper = styled.main<HomeWrapperProps>`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background: ${({ $background, $secondaryBackground }) =>
     `linear-gradient(to bottom, ${$secondaryBackground}, ${$background})`};
   color: ${({ $color }) => $color};
@@ -43,6 +44,9 @@ export const HomeProfileInfo = styled.section<HomeProfileProps>`
       border-radius: 50%;
       border: 6px solid ${({ $border }) => $border};
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.07);
+      @media screen and (max-width: 480px) {
+        width: 150px;
+      }
     }
     p.name-title {
       margin-top: 16px;
@@ -53,6 +57,9 @@ export const HomeProfileInfo = styled.section<HomeProfileProps>`
       width: 50%;
       margin-top: 16px;
       font-size: 16px;
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
     }
   }
   div.social-media {

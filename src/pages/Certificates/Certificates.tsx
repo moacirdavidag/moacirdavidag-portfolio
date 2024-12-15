@@ -14,11 +14,11 @@ import PageTitle from "../../components/PageTitle/PageTitle";
 import Container from "../../components/Container";
 import { useTheme } from "../../hooks/theme";
 
-import logoIrede from '../../assets/img/logo_irede.png';
-import logoDio from '../../assets/img/logo_dio.png';
-import logoIF from '../../assets/img/logo-ifpb.jpg';
-import logoUdemy from '../../assets/img/logo_udemy.png';
-import logoAtlantico from '../../assets/img/logo_avanti.png';
+import logoIrede from "../../assets/img/logo_irede.png";
+import logoDio from "../../assets/img/logo_dio.png";
+import logoIF from "../../assets/img/logo-ifpb.jpg";
+import logoUdemy from "../../assets/img/logo_udemy.png";
+import logoAtlantico from "../../assets/img/logo_avanti.png";
 
 const Certificates = () => {
   const { theme } = useTheme();
@@ -30,11 +30,16 @@ const Certificates = () => {
         <Stack width={"100%"} my={2}>
           <PageTitle title="Certificados" />
         </Stack>
-        <Grid container width={"100%"} className="animate__animated animate__fadeInLeft">
-          <Grid item xs={4}>
+        <Grid
+          container
+          width={"100%"}
+          spacing={2}
+          direction={{ xs: "column", sm: "row" }}
+          className="animate__animated animate__fadeInLeft"
+        >
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -54,16 +59,17 @@ const Certificates = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Bootcamp feito pela DIO que abordou as tecnologias iniciais do desenvolvimento web: HTML, CSS e JavaScript. Realizado em 2022.
+                    Bootcamp feito pela DIO que abordou as tecnologias iniciais
+                    do desenvolvimento web: HTML, CSS e JavaScript. Realizado em
+                    2022.
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -83,16 +89,17 @@ const Certificates = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Bootcamp de Desenvolvimento Full Stack organizado pelo Avanti do Instituto Atlântico, que abordou tecnologias como NodeJs e Express no backend e React no frontend.
+                    Bootcamp de Desenvolvimento Full Stack organizado pelo
+                    Avanti do Instituto Atlântico, que abordou tecnologias como
+                    NodeJs e Express no backend e React no frontend.
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -112,19 +119,26 @@ const Certificates = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Curso de Banco de Dados Relacionais no iRede, que abordou conceitos de modelagem de banco de dados, normalização de tabelas e uso de SGBDs.
+                    Curso de Banco de Dados Relacionais no iRede, que abordou
+                    conceitos de modelagem de banco de dados, normalização de
+                    tabelas e uso de SGBDs.
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          
         </Grid>
-        <Grid container width={"100%"} my={2} className="animate__animated animate__fadeInLeft">
-          <Grid item xs={4}>
+        <Grid
+          container
+          width={"100%"}
+          spacing={2}
+          direction={{ xs: "column", sm: "row" }}
+          my={2}
+          className="animate__animated animate__fadeInLeft"
+        >
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -144,16 +158,16 @@ const Certificates = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Curso de desenvolvimento web feito na plataforma Udemy, que abordou as tecnologias PHP, JavaScript, HTML e CSS
+                    Curso de desenvolvimento web feito na plataforma Udemy, que
+                    abordou as tecnologias PHP, JavaScript, HTML e CSS
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -173,16 +187,16 @@ const Certificates = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Ministrei sobre GraphQL no IV Sertão Comp - evento de computação do IFPB - Campus Cajazeiras
+                    Ministrei sobre GraphQL no IV Sertão Comp - evento de
+                    computação do IFPB - Campus Cajazeiras
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
-                maxWidth: 345,
                 background: theme.colors.secondaryBackground,
                 color: theme.colors.textPrimary,
               }}
@@ -202,13 +216,14 @@ const Certificates = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Ministrei sobre a linguagem JavaScript e seus conceitos fundamentais, sintaxes e recursos no II Sertão Comp - evento de computação do IFPB - Campus Cajazeiras
+                    Ministrei sobre a linguagem JavaScript e seus conceitos
+                    fundamentais, sintaxes e recursos no II Sertão Comp - evento
+                    de computação do IFPB - Campus Cajazeiras
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          
         </Grid>
       </Container>
     </CertificatesWrapper>
