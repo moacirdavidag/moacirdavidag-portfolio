@@ -47,6 +47,7 @@ export const NavLinks = styled.nav<NavLinksProps>`
   }
   ul li.link-active {
     border-bottom: 4px solid ${({ $linkColor }) => $linkColor};
+    padding-bottom: 4px;
   }
 `;
 

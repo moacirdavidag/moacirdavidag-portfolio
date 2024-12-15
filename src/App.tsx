@@ -9,7 +9,7 @@ function App() {
   const { theme } = useTheme();
 
   return (
-    <div className="container-app" style={{background: theme.colors.background}}>
+    <div className="container-app" style={{background: theme.colors.background, color: theme.colors.textPrimary}}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

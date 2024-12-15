@@ -8,3 +8,8 @@
   padding: 0;
 }
 
+html {
+  min-height: 100vh;
+  max-height: 20px;
+}
+
