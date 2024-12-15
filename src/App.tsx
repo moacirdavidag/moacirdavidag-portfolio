@@ -5,6 +5,7 @@ import "animate.css";
 import About from "./pages/About";
 import { useTheme } from "./hooks/theme";
 import Certificates from "./pages/Certificates";
+import Projects from "./pages/Projects";
 
 function App() {
   const { theme } = useTheme();
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/certificates" element={<Certificates />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
     </div>
