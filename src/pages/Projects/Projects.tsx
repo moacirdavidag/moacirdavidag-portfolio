@@ -99,7 +99,9 @@ const Projects = () => {
                     Express para uma escola pública da minha cidade, utilizada
                     em uma eleição de grêmio estudantil.
                     <br />
-                    <strong>Tecnologias/Habilidades:</strong> NodeJS, Express, JavaScript, Criação e Consumo de APIs, MongoDB / MongoDB Atlas
+                    <strong>Tecnologias/Habilidades:</strong> NodeJS, Express,
+                    JavaScript, Criação e Consumo de APIs, MongoDB / MongoDB
+                    Atlas
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -128,9 +130,13 @@ const Projects = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Aplicativo mobile que desenvolvi como bolsista no IFPB - Campus Cajazeiras para digitalizar os processos operacionais e ajudar os estudantes dos cursos de enfermagem e técnico de enfermagem.
+                    Aplicativo mobile que desenvolvi como bolsista no IFPB -
+                    Campus Cajazeiras para digitalizar os processos operacionais
+                    e ajudar os estudantes dos cursos de enfermagem e técnico de
+                    enfermagem.
                     <br />
-                    <strong>Tecnologias/Habilidades:</strong> React Native, Desenvolvimento Mobile, Figma e UI/UX
+                    <strong>Tecnologias/Habilidades:</strong> React Native,
+                    Desenvolvimento Mobile, Figma e UI/UX
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -150,7 +156,7 @@ const Projects = () => {
             <Button
               sx={{
                 backgroundColor: theme.colors.primary,
-                color: theme.colors.textPrimary,
+                color: "#FFF",
                 "&:hover": {
                   backgroundColor: theme.colors.secondaryBackground,
                 },
@@ -193,7 +199,8 @@ const Projects = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Site Wordpress que criei para a escola GeoJuazeiro, do estado da Bahia.
+                    Site Wordpress que criei para a escola GeoJuazeiro, do
+                    estado da Bahia.
                     <br />
                     <strong>Tecnologias/Habilidades:</strong> Wordpress
                   </Typography>
@@ -224,9 +231,11 @@ const Projects = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Landing Page desenvolvida para a Brasil Sun, uma empresa do ramo de energia solar.
+                    Landing Page desenvolvida para a Brasil Sun, uma empresa do
+                    ramo de energia solar.
                     <br />
-                    <strong>Tecnologias/Habilidades:</strong> HTML, CSS e JavaScript
+                    <strong>Tecnologias/Habilidades:</strong> HTML, CSS e
+                    JavaScript
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -255,14 +264,37 @@ const Projects = () => {
                     variant="body2"
                     sx={{ color: theme.colors.textSecondary }}
                   >
-                    Landing Page criada para a empresa Braforte, do ramo de segurança, e integrada a um Wordpress da empresa.
+                    Landing Page criada para a empresa Braforte, do ramo de
+                    segurança, e integrada a um Wordpress da empresa.
                     <br />
-                    <strong>Tecnologias/Habilidades:</strong> HTML, CSS e JavaScript
+                    <strong>Tecnologias/Habilidades:</strong> HTML, CSS e
+                    JavaScript
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
+          <Stack width={"100%"} my={2}>
+            Você precisa de um aplicativo, site, blog ou landing page para
+            mostrar seus serviços e conteúdos aos seus clientes?{" "}
+            <strong>Fale comigo e conheça meus serviços.</strong>
+            <Link to={"https://wa.me/5583988515604"} target="_blank">
+              <Button
+                sx={{
+                  backgroundColor: theme.colors.primary,
+                  color: "#FFF",
+                  "&:hover": {
+                    backgroundColor: theme.colors.secondaryBackground,
+                  },
+                  width: "max-content",
+                  my: 2,
+                }}
+                onClick={() => {}}
+              >
+                Fale comigo
+              </Button>
+            </Link>
+          </Stack>
         </Grid>
       </Container>
     </ProjectsWrapper>
