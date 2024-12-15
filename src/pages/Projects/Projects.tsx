@@ -22,6 +22,7 @@ import brasilsun from "../../assets/img/lp_brasil_sun.jpg";
 import braforte from "../../assets/img/lp_braforte.jpg";
 import { ProjectsWrapper } from "./style";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 const Projects = () => {
   const { theme } = useTheme();
@@ -292,6 +293,7 @@ const Projects = () => {
             </Link>
           </Stack>
         </Grid>
+        <Footer />
       </Container>
     </ProjectsWrapper>
   );

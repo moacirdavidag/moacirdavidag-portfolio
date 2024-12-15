@@ -35,20 +35,21 @@ import {
   TimelineItem,
   TimelineSeparator,
 } from "@mui/lab";
+import Footer from "../../components/Footer/Footer";
 const About = () => {
   const { theme } = useTheme();
   const themeMUI = useThemeMUI();
 
   const isSmallScreen = useMediaQuery(themeMUI.breakpoints.down("sm"));
 
-  const fontSize = isSmallScreen ? 10 : 14;
+  const fontSize = isSmallScreen ? 12 : 14;
 
   return (
     <AboutWrapper>
       <Container>
         <Header />
         <Grid container width={"100%"} direction={{ xs: "column", sm: "row" }}>
-          <Grid item xs={6} sm={3}>
+          <Grid item sm={6}>
             <img
               src={vetorDev}
               alt="Ilustração de um programador em um computador"
@@ -59,8 +60,7 @@ const About = () => {
           </Grid>
           <Grid
             item
-            xs={6}
-            sm={3}
+            sm={6}
             display={"flex"}
             flexDirection={"column"}
             gap={"24px"}
@@ -124,7 +124,7 @@ const About = () => {
           my={4}
           direction={{ xs: "column", sm: "row" }}
         >
-          <Grid item xs={6}>
+          <Grid item sm={6}>
             <PageTitle
               title="Minhas habilidades"
               fontSize={20}
@@ -189,8 +189,7 @@ const About = () => {
           </Grid>
           <Grid
             item
-            xs={6}
-            sm={3}
+            sm={6}
             alignItems={isSmallScreen ? "flex-start" : "flex-end"}
             justifyContent={isSmallScreen ? "flex-start" : "flex-end"}
             display={"flex"}
@@ -248,6 +247,7 @@ const About = () => {
             </Box>
           </Grid>
         </Grid>
+        <Footer />
       </Container>
     </AboutWrapper>
   );

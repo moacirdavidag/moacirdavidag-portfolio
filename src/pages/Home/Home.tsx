@@ -11,6 +11,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 import MoacirDavid from "../../assets/img/moacir_david.png";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -93,6 +94,7 @@ const Home = () => {
             </Link>
           </div>
         </HomeProfileInfo>
+        <Footer />
       </Container>
     </HomeWrapper>
   );

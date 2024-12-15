@@ -19,6 +19,7 @@ import logoDio from "../../assets/img/logo_dio.png";
 import logoIF from "../../assets/img/logo-ifpb.jpg";
 import logoUdemy from "../../assets/img/logo_udemy.png";
 import logoAtlantico from "../../assets/img/logo_avanti.png";
+import Footer from "../../components/Footer/Footer";
 
 const Certificates = () => {
   const { theme } = useTheme();
@@ -225,6 +226,7 @@ const Certificates = () => {
             </Card>
           </Grid>
         </Grid>
+        <Footer />
       </Container>
     </CertificatesWrapper>
   );
