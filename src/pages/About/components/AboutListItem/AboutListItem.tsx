@@ -1,6 +1,5 @@
 import { Box, Stack } from "@mui/material";
 import React from "react";
-import { useTheme } from "../../../../hooks/theme";
 
 type AboutListItemProps = {
   title: string;
@@ -15,7 +14,6 @@ const AboutListItem = ({
   fontSize,
   icon,
 }: AboutListItemProps) => {
-  const { theme } = useTheme();
 
   return (
     <Stack

@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../../components/Container";
 import Header from "../../components/Header";
 import {
@@ -20,7 +19,6 @@ import CodeIcon from "@mui/icons-material/Code";
 import DescriptionIcon from "@mui/icons-material/Description";
 import JavascriptIcon from "@mui/icons-material/Javascript";
 import StorageIcon from "@mui/icons-material/Storage";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import GroupsIcon from "@mui/icons-material/Groups";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import BuildIcon from "@mui/icons-material/Build";

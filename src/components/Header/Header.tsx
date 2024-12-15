@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { HeaderButtons, HeaderWrapper, MobileMenu, NavLinks } from "./style";
 import { useTheme } from "../../hooks/theme";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -20,10 +20,6 @@ const Header = () => {
   const handleNavigateApplication = (route: string) => {
     navigate(`${route}`);
     setIsMenuOpen(false);
-  };
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
   };
 
   return (

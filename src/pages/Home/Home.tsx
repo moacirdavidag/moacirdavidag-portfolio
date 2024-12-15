@@ -1,4 +1,3 @@
-import React from "react";
 import { useTheme } from "../../hooks/theme";
 import { HomeProfileInfo, HomeWrapper } from "./style";
 import Container from "../../components/Container";

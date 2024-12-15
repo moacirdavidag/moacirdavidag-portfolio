@@ -1,4 +1,3 @@
-import React from "react";
 import { CertificatesWrapper } from "./style";
 import Header from "../../components/Header";
 import {
