@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { AppProvider } from '@/context/AppContext';
+import Analytics from '@/components/Analytics';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -16,35 +17,44 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Moacir David | Software Engineer Full Stack & Mobile',
-  description: 'Portfólio profissional de Moacir David — Software Engineer especializado em Next.js, Node.js, React Native, NestJS e arquiteturas de alta concorrência.',
+  title: 'Moacir David | Engenheiro de Software — Sites, Apps & Sistemas Web',
+  description: 'Moacir David é Engenheiro de Software: cria sites, aplicativos mobile e sistemas digitais completos. Especializado em Next.js, React Native e Node.js. Disponível para projetos freelance e consultorias.',
   keywords: [
     'Moacir David',
+    'Moacir David de Almeida Gonçalves',
     'Software Engineer',
+    'Engenheiro de Software',
     'Desenvolvedor Full Stack',
+    'Criador de Sites',
+    'Desenvolvimento de Aplicativos',
+    'Criação de Sistemas Web',
+    'Desenvolvedor de Apps',
+    'Freelance Dev',
     'React',
     'Next.js',
     'Node.js',
     'React Native',
     'NestJS',
     'Poder360',
+    'eScriptura',
     'Paraíba',
-    'Portfólio Dev'
+    'Brasil',
+    'Portfólio Desenvolvedor'
   ],
   authors: [{ name: 'Moacir David de Almeida Gonçalves' }],
   creator: 'Moacir David',
   openGraph: {
-    title: 'Moacir David | Software Engineer Full Stack & Mobile',
-    description: 'Engenheiro de Software com foco em aplicações web e mobile escaláveis, APIs de alta concorrência e experiências premium.',
+    title: 'Moacir David | Engenheiro de Software — Sites, Apps & Sistemas',
+    description: 'Crio sites, aplicativos mobile e sistemas digitais do zero. Engenheiro de Software com experiência em produtos de grande escala, APIs robustas e apps para iOS e Android.',
     url: 'https://moacirdavid.dev',
-    siteName: 'Moacir David Portfolio',
+    siteName: 'Moacir David — Portfólio',
     locale: 'pt_BR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Moacir David | Software Engineer',
-    description: 'Portfólio de Engenharia de Software de Moacir David.',
+    title: 'Moacir David | Engenheiro de Software',
+    description: 'Crio sites, aplicativos e sistemas digitais. Engenheiro de Software Full Stack & Mobile disponível para projetos e consultorias.',
   },
   robots: {
     index: true,
@@ -61,19 +71,43 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Moacir David de Almeida Gonçalves',
-    jobTitle: 'Software Engineer',
+    givenName: 'Moacir David',
+    familyName: 'de Almeida Gonçalves',
+    jobTitle: 'Software Engineer — Criação de Sites, Aplicativos e Sistemas Digitais',
+    description: 'Engenheiro de Software especializado em criar sites, aplicativos mobile (iOS/Android) e sistemas digitais completos para empresas e negócios. Fundador do eScriptura, SaaS de gestão para igrejas.',
+    knowsAbout: [
+      'Desenvolvimento Web',
+      'Criação de Sites',
+      'Aplicativos Mobile',
+      'Sistemas Web',
+      'React',
+      'Next.js',
+      'React Native',
+      'Node.js',
+      'APIs',
+      'SaaS',
+    ],
     worksFor: {
       '@type': 'Organization',
       name: 'Poder360',
+      url: 'https://poder360.com.br',
     },
     alumniOf: {
       '@type': 'EducationalOrganization',
       name: 'Instituto Federal da Paraíba (IFPB)',
+      address: { '@type': 'PostalAddress', addressLocality: 'Cajazeiras', addressRegion: 'PB', addressCountry: 'BR' },
     },
-    url: 'https://github.com/moacirdavidag',
+    address: {
+      '@type': 'PostalAddress',
+      addressRegion: 'Paraíba',
+      addressCountry: 'BR',
+    },
+    url: 'https://moacirdavid.dev',
     sameAs: [
       'https://github.com/moacirdavidag',
       'https://www.linkedin.com/in/moacir-david-7735b7158/',
+      'https://escripturaebd.com.br',
+      'https://www.instagram.com/escripturaebd',
     ],
   };
 
@@ -89,6 +123,7 @@ export default function RootLayout({
         <AppProvider>
           {children}
         </AppProvider>
+        <Analytics />
       </body>
     </html>
   );

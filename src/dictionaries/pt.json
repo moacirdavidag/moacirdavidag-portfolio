@@ -8,8 +8,8 @@
     },
     "hero": {
       "greeting": "Olá, eu sou o",
-      "role": "Software Engineer Full Stack & Mobile",
-      "tagline": "Transformando desafios complexos de software em aplicações escaláveis, elegantes e de alta performance.",
+      "role": "Software Engineer — Crio Sites, Apps & Sistemas",
+      "tagline": "Transformo ideias em realidade digital: sites modernos, aplicativos mobile e sistemas completos que resolvem problemas reais de negócios.",
       "status": "Disponível para novos projetos & consultorias",
       "cta_contact": "Fale Comigo",
       "cta_resume": "Baixar Currículo PDF",
@@ -17,8 +17,8 @@
     },
     "about": {
       "title": "Sobre Mim & Trajetória",
-      "subtitle": "Software Engineer orientado a resultados, apaixonado por tecnologia, arquitetura limpa e impacto real.",
-      "bio": "Engenheiro de Software com experiência em sistemas de grande escala e alta concorrência. Atuo no desenvolvimento Full Stack e Mobile, unindo precisão técnica na construção de APIs e interfaces fluidas a uma visão estratégica de produto. Fora do código, dedico meu tempo à música 🎸, jogos 🎮 e aprendizado contínuo.",
+      "subtitle": "Em resumo: crio sites, aplicativos e sistemas digitais. Tecnicamente: sou Software Engineer Full Stack & Mobile orientado a resultados.",
+      "bio": "Sou Engenheiro de Software — na prática, isso significa que crio desde sites institucionais e lojas virtuais até aplicativos para celular (iOS e Android) e sistemas completos para empresas. Tenho experiência em produtos de grande escala e alta concorrência, como o painel de apuração das Eleições 2024 da Poder360, e também sou fundador do eScriptura, um sistema SaaS para igrejas. Fora do código, dedico meu tempo à música 🎸, jogos 🎮 e aprendizado contínuo.",
       "quick_facts": {
         "title": "Fatos Rápidos",
         "name_label": "Nome:",
@@ -36,19 +36,19 @@
       "skills_title": "Competências Técnicas"
     },
     "projects": {
-      "title": "Projetos de Alto Impacto",
-      "subtitle": "Uma seleção de produtos digitais, aplicações de grande escala e projetos dos quais participei com orgulho.",
+      "title": "Projetos que Criei & Liderei",
+      "subtitle": "Sites, aplicativos, plataformas e sistemas digitais que desenvolvi — de produtos SaaS para igrejas a painéis de dados jornalísticos em tempo real.",
       "filter_all": "Todos",
-      "filter_web": "Web & APIs",
-      "filter_mobile": "Mobile",
+      "filter_web": "Sites & Sistemas Web",
+      "filter_mobile": "Apps Mobile",
       "filter_freelance": "Freelance",
       "view_project": "Ver Detalhes",
       "github_link": "Repositório GitHub",
       "live_demo": "Acessar Aplicação"
     },
     "contact": {
-      "title": "Vamos Conversar?",
-      "subtitle": "Tem um projeto em mente, uma proposta de oportunidade ou quer apenas bater um papo sobre tecnologia?",
+      "title": "Precisa de um Site, App ou Sistema?",
+      "subtitle": "Tem um projeto em mente, quer criar um site, aplicativo ou sistema para o seu negócio? Me conta! Também estou aberto a oportunidades de emprego.",
       "form_name": "Seu Nome",
       "form_email": "Seu E-mail",
       "form_subject": "Assunto",
@@ -72,14 +72,14 @@
       "startDate": "2024-07-01",
       "current": true,
       "location": "Brasília, DF (Remoto)",
-      "summary": "Desenvolvimento, evolução e manutenção de sistemas e produtos digitais que sustentam a operação editorial e plataformas de grande público.",
+      "summary": "Desenvolvimento e manutenção dos sistemas e plataformas digitais que sustentam o jornalismo de um dos maiores portais de notícias políticas do Brasil.",
       "highlights": [
-        "Desenvolvimento do projeto especial Eleições 2024: Interfaces públicas de acompanhamento de resultados eleitorais em tempo real sob tráfego massivo.",
-        "Desenvolvimento Full Stack com React, Next.js e TypeScript para aplicações web de alto desempenho.",
-        "Construção e manutenção de APIs e serviços backend em Node.js, Express, NestJS e Fastify.",
-        "Desenvolvimento de scrapers, automações e pipelines de ETL em Python e Node.js para processamento dinâmico de dados.",
-        "Implementação de soluções para geração dinâmica de imagens e conteúdos orientados a dados para distribuição editorial.",
-        "Manutenção evolutiva e customização de aplicações e integrações WordPress."
+        "Criei interfaces e ferramentas para o projeto especial Eleições 2024: o painel de resultados eleitorais em tempo real acompanhado por milhares de brasileiros.",
+        "Desenvolvimento de sites e plataformas web com React e Next.js — sistemas que carregam rápido mesmo com muito acesso simultâneo.",
+        "Criação e manutenção de APIs (o 'motor' por trás dos sites) em Node.js, Express, NestJS e Fastify.",
+        "Automações e scripts que coletam e processam dados automaticamente (scraping e ETL) em Python e Node.js.",
+        "Geração automática de imagens e conteúdos personalizados para distribuição jornalística.",
+        "Customização e manutenção de sites em WordPress."
       ],
       "techs": ["Next.js", "React", "TypeScript", "Node.js", "NestJS", "Fastify", "Python", "WordPress", "Docker"]
     },
@@ -92,12 +92,12 @@
       "endDate": "2025-05-31",
       "current": false,
       "location": "São Paulo, SP (Remoto)",
-      "summary": "Atuação em todo o ciclo de vida das aplicações web e mobile da empresa, da concepção à entrega em produção.",
+      "summary": "Atuação em todo o ciclo de vida de sites, aplicativos e sistemas digitais — da ideia à publicação em produção.",
       "highlights": [
-        "Desenvolvimento de APIs e microsserviços em PHP, Laravel, Node.js e NestJS com MySQL.",
-        "Criação de interfaces web responsivas e modernas em React com bibliotecas de UI.",
-        "Desenvolvimento e manutenção de aplicativos mobile em React Native.",
-        "Dockerização de aplicações e estruturação de esteiras de CI/CD para automação de deploy."
+        "Criação de sistemas e APIs backend (o motor que faz os sites e apps funcionarem) em PHP, Laravel, Node.js e NestJS.",
+        "Desenvolvimento de sites e interfaces web modernas e responsivas com React.",
+        "Desenvolvimento de aplicativos mobile para iOS e Android com React Native.",
+        "Configuração de ambientes de deploy automatizado com Docker e CI/CD — garantindo que o sistema vá ao ar sem erros."
       ],
       "techs": ["PHP", "Laravel", "Node.js", "NestJS", "MySQL", "React", "React Native", "Docker", "CI/CD"]
     },
@@ -110,11 +110,11 @@
       "endDate": "2024-10-31",
       "current": false,
       "location": "Cajazeiras, PB (Híbrido)",
-      "summary": "Atuação estratégica e técnica na empresa júnior do IFPB, conectando a área comercial à execução dos projetos.",
+      "summary": "Atuação técnica e estratégica na empresa júnior do IFPB, entregando sistemas web sob medida para clientes reais.",
       "highlights": [
-        "Desenvolvimento de sistemas web com React, Node.js e Vite.",
-        "Levantamento e análise de requisitos técnicos com clientes e elaboração de propostas comerciais.",
-        "Trabalho com metodologias ágeis (Scrum/Kanban) e versionamento colaborativo via Git."
+        "Criação de sites e sistemas web personalizados para clientes com React, Node.js e Vite.",
+        "Levantamento do que o cliente precisava e elaboração de propostas técnicas e comerciais.",
+        "Trabalho em equipe com metodologias ágeis (Scrum/Kanban) e controle de versão de código com Git."
       ],
       "techs": ["React", "Node.js", "Vite", "Scrum", "Git"]
     },
@@ -127,10 +127,10 @@
       "endDate": "2023-09-30",
       "current": false,
       "location": "Marizópolis, PB",
-      "summary": "Suporte técnico e modernização dos serviços tecnológicos da prefeitura.",
+      "summary": "Suporte técnico e criação de soluções digitais para modernizar os serviços tecnológicos da prefeitura.",
       "highlights": [
-        "Idealizou, desenvolveu e implantou o urnaSIM, sistema web de votação eletrônica utilizado em eleições estudantis na rede pública de ensino.",
-        "Suporte técnico a computadores, infraestrutura de redes e sistemas da administração municipal."
+        "Criou, desenvolveu e implantou o urnaSIM: um sistema de urna eletrônica digital — como as máquinas do TSE, mas para eleições estudantis — utilizado nas escolas públicas do município.",
+        "Suporte técnico a computadores, redes e sistemas da administração municipal."
       ],
       "techs": ["Node.js", "Express", "MongoDB", "JavaScript", "HTML/CSS"]
     }
@@ -141,7 +141,7 @@
       "title": "eScriptura — Gestão de EBD",
       "category": "web",
       "role": "Fundador, Criador & Lead Architect",
-      "description": "SaaS completo para gestão e modernização de Escolas Bíblicas Dominicais (EBD). Plataforma desenvolvida com Next.js e Firebase, permitindo controle de matrículas, frequência, relatórios estatísticos e gestão financeira de alunos e professores.",
+      "description": "SaaS (sistema digital por assinatura) completo para modernizar a gestão das Escolas Bíblicas Dominicais (EBD) de igrejas. A plataforma permite controlar matrículas de alunos, frequência, relatórios e gestão financeira — tudo online, sem papel. Desenvolvido com Next.js e Firebase.",
       "techs": ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "SaaS"],
       "image": "/images/projects/escriptura.webp",
       "featured": true,
@@ -152,7 +152,7 @@
       "title": "App Mobile Cafeteria Grão Roxo",
       "category": "mobile",
       "role": "Tech Lead & Arquiteto Mobile",
-      "description": "Aplicativo mobile desenvolvido em grupo voluntário para a Cafeteria Grão Roxo. Liderança técnica do time de devs, alinhamento com stakeholders, definição do fluxo UX/UI e arquitetura limpa em React Native.",
+      "description": "Aplicativo mobile (para celular) desenvolvido voluntariamente para a Cafeteria Grão Roxo. Liderança técnica do time de desenvolvedores, alinhamento com os responsáveis do negócio, definição da experiência do usuário e arquitetura do app em React Native.",
       "techs": ["React Native", "TypeScript", "UX/UI Design", "Clean Architecture"],
       "image": "/images/projects/grao-roxo.webp",
       "featured": true
@@ -162,7 +162,7 @@
       "title": "Painel de Apuração Eleições 2024 — Poder360",
       "category": "web",
       "role": "Software Engineer",
-      "description": "Plataforma pública de acompanhamento da apuração dos votos das Eleições 2024 do jornal Poder360. Foco em renderização ultra-rápida, dados em tempo real e alta disponibilidade.",
+      "description": "Site de acompanhamento dos resultados das Eleições 2024 em tempo real, desenvolvido para o Poder360 — um dos maiores portais de jornalismo político do Brasil. Foco em velocidade extrema e disponibilidade mesmo com milhares de acessos simultâneos.",
       "techs": ["Next.js", "React", "TypeScript", "Realtime Data API"],
       "image": "/images/projects/eleicoes-poder360.webp",
       "featured": true,
@@ -173,7 +173,7 @@
       "title": "urnaSIM — Votação Eletrônica Escolar",
       "category": "web",
       "role": "Criador & Desenvolvedor Full Stack",
-      "description": "Sistema completo de urna eletrônica digital desenvolvido com Node.js e MongoDB para promover processos eleitorais educativos e transparentes nas escolas públicas.",
+      "description": "Sistema completo de urna eletrônica digital — semelhante ao conceito das urnas do TSE, mas para eleições estudantis nas escolas públicas. Desenvolvido do zero com Node.js e MongoDB, promovendo eleições transparentes e educativas.",
       "techs": ["Node.js", "Express", "MongoDB", "JavaScript"],
       "image": "/images/projects/urnasim.webp",
       "featured": true
@@ -183,7 +183,7 @@
       "title": "semiopop — App de Enfermagem",
       "category": "mobile",
       "role": "Bolsista / Desenvolvedor Mobile",
-      "description": "Aplicativo mobile desenvolvido no IFPB para digitalizar procedimentos operacionais padrão (POPs) e auxiliar alunos e professores dos cursos de Enfermagem.",
+      "description": "Aplicativo mobile desenvolvido no IFPB para digitalizar procedimentos operacionais padrão (POPs) — ou seja, transformar em tela de celular os manuais e protocolos impressos — auxiliando alunos e professores dos cursos de Enfermagem.",
       "techs": ["React Native", "Figma", "Mobile UI"],
       "image": "/images/projects/semiopop.webp",
       "featured": true
@@ -193,7 +193,7 @@
       "title": "Portal Escola GeoJuazeiro",
       "category": "freelance",
       "role": "Desenvolvedor Web Freelance",
-      "description": "Portal institucional desenvolvido para a escola GeoJuazeiro na Bahia, com layout responsivo e gerenciamento de conteúdo customizado.",
+      "description": "Site institucional desenvolvido para a escola GeoJuazeiro na Bahia, com design responsivo (funciona bem no celular e computador) e sistema de gerenciamento de conteúdo para a equipe da escola.",
       "techs": ["WordPress", "PHP", "CSS3"],
       "image": "/images/projects/geojuazeiro.webp",
       "featured": false
@@ -203,7 +203,7 @@
       "title": "Landing Page Brasil Sun",
       "category": "freelance",
       "role": "Desenvolvedor Frontend Freelance",
-      "description": "Landing page de alta conversão para empresa do ramo de energia solar, com otimização SEO e carregamento veloz.",
+      "description": "Landing page (página de vendas) desenvolvida para empresa do ramo de energia solar. Otimizada para aparecer bem no Google (SEO) e carregar rapidamente, aumentando as conversões.",
       "techs": ["HTML5", "CSS3", "JavaScript"],
       "image": "/images/projects/brasil-sun.webp",
       "featured": false

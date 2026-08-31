@@ -6,6 +6,7 @@ import ptDict from '@/dictionaries/pt.json';
 import enDict from '@/dictionaries/en.json';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { trackEvent } from './Analytics';
 
 export default function ContactForm() {
   const { language } = useApp();
@@ -41,6 +42,7 @@ export default function ContactForm() {
 
       if (res.ok) {
         setStatus('success');
+        trackEvent('submit_contact_form', 'conversion', formData.subject || 'Geral');
         setFormData({ name: '', email: '', subject: '', message: '' });
         confetti({
           particleCount: 80,

@@ -8,8 +8,8 @@
     },
     "hero": {
       "greeting": "Hi, I am",
-      "role": "Full Stack & Mobile Software Engineer",
-      "tagline": "Transforming complex software challenges into scalable, elegant, and high-performance applications.",
+      "role": "Software Engineer — I Build Websites, Apps & Systems",
+      "tagline": "I turn ideas into digital reality: modern websites, mobile apps, and complete systems that solve real business problems.",
       "status": "Available for new projects & consulting",
       "cta_contact": "Get in Touch",
       "cta_resume": "Download Resume PDF",
@@ -17,8 +17,8 @@
     },
     "about": {
       "title": "About Me & Journey",
-      "subtitle": "Results-oriented Software Engineer passionate about technology, clean architecture, and real-world impact.",
-      "bio": "Software Engineer with experience in high-concurrency, large-scale systems. I specialize in Full Stack and Mobile engineering, combining technical precision in API development and fluid UIs with a strategic product vision. Beyond coding, I enjoy playing guitar 🎸, gaming 🎮, and continuous learning.",
+      "subtitle": "In plain terms: I build websites, mobile apps, and digital systems. Technically: I am a Full Stack & Mobile Software Engineer.",
+      "bio": "I am a Software Engineer — in practice, that means I create everything from institutional websites and online stores to mobile apps (iOS & Android) and full digital systems for businesses. I have hands-on experience with large-scale, high-traffic products like the Poder360 Elections 2024 live results dashboard, and I am also the founder of eScriptura, a SaaS management system for churches. Beyond coding, I enjoy guitar 🎸, gaming 🎮, and continuous learning.",
       "quick_facts": {
         "title": "Quick Facts",
         "name_label": "Name:",
@@ -36,19 +36,19 @@
       "skills_title": "Technical Skills"
     },
     "projects": {
-      "title": "High-Impact Projects",
-      "subtitle": "A curated showcase of digital products, large-scale systems, and key projects I've built or led.",
+      "title": "Projects I Built & Led",
+      "subtitle": "Websites, mobile apps, platforms, and digital systems I developed — from a SaaS for churches to live election results dashboards used by thousands.",
       "filter_all": "All",
-      "filter_web": "Web & APIs",
-      "filter_mobile": "Mobile",
+      "filter_web": "Websites & Web Systems",
+      "filter_mobile": "Mobile Apps",
       "filter_freelance": "Freelance",
       "view_project": "View Details",
       "github_link": "GitHub Repository",
-      "live_demo": "Live Demo"
+      "live_demo": "Open App"
     },
     "contact": {
-      "title": "Let's Connect",
-      "subtitle": "Have a project in mind, a career opportunity, or want to discuss tech? Feel free to reach out!",
+      "title": "Need a Website, App, or System?",
+      "subtitle": "Have a project idea, want to build a website or app for your business, or have a job opportunity? Let me know!",
       "form_name": "Your Name",
       "form_email": "Your Email",
       "form_subject": "Subject",
@@ -72,14 +72,14 @@
       "startDate": "2024-07-01",
       "current": true,
       "location": "Brasília, DF (Remote)",
-      "summary": "Engineering, evolution, and maintenance of digital systems and APIs powering major digital journalism platforms.",
+      "summary": "Engineering and maintaining the digital systems and platforms powering one of Brazil's leading political journalism portals.",
       "highlights": [
-        "Led key developments for the Elections 2024 special project: High-concurrency public interfaces for live election results.",
-        "Full Stack development with React, Next.js, and TypeScript focused on maximum rendering performance and scalability.",
-        "Engineered backend microservices and APIs using Node.js, Express, NestJS, and Fastify.",
-        "Built automated data scrapers and ETL pipelines in Python and Node.js for real-time data processing.",
-        "Implemented data-driven dynamic image generation for news distribution.",
-        "Evolved and maintained custom WordPress backend solutions."
+        "Built the Elections 2024 special project: a live vote-counting dashboard accessed by thousands of Brazilians on election night.",
+        "Developed high-performance websites and web platforms using React and Next.js — systems that stay fast even under heavy simultaneous traffic.",
+        "Built and maintained APIs (the 'engine' behind websites) using Node.js, Express, NestJS, and Fastify.",
+        "Created automated scripts that collect and process data on their own (web scraping and ETL pipelines) using Python and Node.js.",
+        "Automated dynamic image and content generation for journalistic distribution.",
+        "Maintained and customized WordPress-based websites and integrations."
       ],
       "techs": ["Next.js", "React", "TypeScript", "Node.js", "NestJS", "Fastify", "Python", "WordPress", "Docker"]
     },
@@ -92,12 +92,12 @@
       "endDate": "2025-05-31",
       "current": false,
       "location": "São Paulo, SP (Remote)",
-      "summary": "Contributed across the full lifecycle of web and mobile software products.",
+      "summary": "Worked across the full lifecycle of websites, mobile apps, and digital systems — from idea to live production.",
       "highlights": [
-        "Engineered RESTful APIs and backend services in PHP, Laravel, Node.js, and NestJS backed by MySQL.",
-        "Built responsive web user interfaces using React and modern component libraries.",
-        "Developed cross-platform mobile apps using React Native.",
-        "Containerized applications with Docker and established automated CI/CD deployment pipelines."
+        "Built backend systems and APIs (the engine that makes websites and apps work) in PHP, Laravel, Node.js, and NestJS.",
+        "Developed responsive, modern web interfaces using React.",
+        "Built cross-platform mobile apps for iOS and Android using React Native.",
+        "Set up automated deployment pipelines with Docker and CI/CD — ensuring systems go live reliably."
       ],
       "techs": ["PHP", "Laravel", "Node.js", "NestJS", "MySQL", "React", "React Native", "Docker", "CI/CD"]
     },
@@ -110,11 +110,11 @@
       "endDate": "2024-10-31",
       "current": false,
       "location": "Cajazeiras, PB (Hybrid)",
-      "summary": "Bridged client business demands with technical software execution at IFPB's junior enterprise.",
+      "summary": "Delivered custom web systems for real clients at IFPB's junior enterprise, bridging business needs with technical execution.",
       "highlights": [
-        "Developed custom web applications using React, Node.js, and Vite.",
-        "Gathered client requirements and drafted technical & commercial proposals.",
-        "Worked in Agile development sprints using Git version control."
+        "Built custom websites and web systems for real clients using React, Node.js, and Vite.",
+        "Gathered client requirements and translated them into technical and commercial proposals.",
+        "Worked in Agile sprints with Git version control for team collaboration."
       ],
       "techs": ["React", "Node.js", "Vite", "Scrum", "Git"]
     },
@@ -127,10 +127,10 @@
       "endDate": "2023-09-30",
       "current": false,
       "location": "Marizópolis, PB",
-      "summary": "Provided IT infrastructure support and modern digital solutions for local public services.",
+      "summary": "Provided IT support and built digital solutions to modernize public services for a municipal government.",
       "highlights": [
-        "Designed, built, and deployed urnaSIM: a digital electronic voting web app utilized in public school student elections.",
-        "Supported hardware, networking, and municipal administration software systems."
+        "Designed, built, and deployed urnaSIM: a digital electronic voting system — like Brazil's TSE voting machines, but for student elections in public schools.",
+        "Provided hardware, network, and software support for municipal administration systems."
       ],
       "techs": ["Node.js", "Express", "MongoDB", "JavaScript", "HTML/CSS"]
     }
@@ -141,7 +141,7 @@
       "title": "eScriptura — EBD Management SaaS",
       "category": "web",
       "role": "Founder, Creator & Lead Architect",
-      "description": "Comprehensive SaaS platform engineered for Sunday Bible School (EBD) management. Built with Next.js and Firebase to streamline student enrollment, attendance tracking, statistical reporting, and class administration.",
+      "description": "A SaaS (subscription-based digital system) for modernizing Sunday Bible School (EBD) management at churches. It lets church leaders track student enrollment, attendance, generate reports, and manage finances — all online, paperless. Built with Next.js and Firebase.",
       "techs": ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "SaaS"],
       "image": "/images/projects/escriptura.webp",
       "featured": true,
@@ -152,7 +152,7 @@
       "title": "Grão Roxo Coffee Mobile App",
       "category": "mobile",
       "role": "Tech Lead & Mobile Architect",
-      "description": "Cross-platform mobile application developed for Cafeteria Grão Roxo. Served as Tech Lead, aligning requirements with stakeholders and designing clean React Native architecture.",
+      "description": "Mobile app (for smartphones) developed voluntarily for Café Grão Roxo. Served as Tech Lead, coordinating the dev team, aligning with the business owners, designing the user experience, and architecting the React Native app.",
       "techs": ["React Native", "TypeScript", "UX/UI Design", "Clean Architecture"],
       "image": "/images/projects/grao-roxo.webp",
       "featured": true
@@ -162,7 +162,7 @@
       "title": "Elections 2024 Dashboard — Poder360",
       "category": "web",
       "role": "Software Engineer",
-      "description": "Live election results portal for Poder360 digital news. Built for ultra-fast server-side rendering, real-time data integration, and high traffic volume.",
+      "description": "Live election results website for Brazil's 2024 elections, built for Poder360 — one of Brazil's largest political journalism portals. Engineered for extreme speed and high availability, even with thousands of simultaneous users.",
       "techs": ["Next.js", "React", "TypeScript", "Realtime Data API"],
       "image": "/images/projects/eleicoes-poder360.webp",
       "featured": true,
@@ -173,7 +173,7 @@
       "title": "urnaSIM — Electronic Voting System",
       "category": "web",
       "role": "Creator & Full Stack Developer",
-      "description": "Full-fledged digital ballot system engineered with Node.js and MongoDB to power transparent and educational student elections in public schools.",
+      "description": "A digital electronic voting system — similar to Brazil's official TSE voting machines, but designed for student elections in public schools. Built from scratch with Node.js and MongoDB for transparent and educational elections.",
       "techs": ["Node.js", "Express", "MongoDB", "JavaScript"],
       "image": "/images/projects/urnasim.webp",
       "featured": true
@@ -183,7 +183,7 @@
       "title": "semiopop — Nursing Mobile App",
       "category": "mobile",
       "role": "Mobile Developer / IFPB Fellow",
-      "description": "Mobile application created at IFPB to digitize standard operating procedures (SOPs) and support Nursing students and instructors.",
+      "description": "Mobile app created at IFPB to digitize standard operating procedures (SOPs) — essentially turning printed clinical manuals into interactive smartphone screens — for Nursing students and instructors.",
       "techs": ["React Native", "Figma", "Mobile UI"],
       "image": "/images/projects/semiopop.webp",
       "featured": true
@@ -193,7 +193,7 @@
       "title": "GeoJuazeiro School Portal",
       "category": "freelance",
       "role": "Freelance Web Developer",
-      "description": "Institutional website built for GeoJuazeiro school in Bahia, featuring responsive layout and custom CMS content management.",
+      "description": "Institutional website built for GeoJuazeiro school in Bahia, with a responsive design (works great on both mobile and desktop) and a content management system the school team can use without coding.",
       "techs": ["WordPress", "PHP", "CSS3"],
       "image": "/images/projects/geojuazeiro.webp",
       "featured": false
@@ -203,7 +203,7 @@
       "title": "Brasil Sun Landing Page",
       "category": "freelance",
       "role": "Freelance Frontend Developer",
-      "description": "High-converting landing page for a solar energy enterprise with SEO optimization and quick page load speeds.",
+      "description": "Sales landing page for a solar energy company, optimized to rank well on Google (SEO) and load fast — driving more customer conversions.",
       "techs": ["HTML5", "CSS3", "JavaScript"],
       "image": "/images/projects/brasil-sun.webp",
       "featured": false
