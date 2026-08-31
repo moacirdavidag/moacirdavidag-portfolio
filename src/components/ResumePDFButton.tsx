@@ -5,6 +5,7 @@ import { useApp } from '@/context/AppContext';
 import ptDict from '@/dictionaries/pt.json';
 import enDict from '@/dictionaries/en.json';
 import { FileText, Loader2 } from 'lucide-react';
+import { trackEvent } from './Analytics';
 
 export default function ResumePDFButton() {
   const { language } = useApp();
@@ -14,6 +15,7 @@ export default function ResumePDFButton() {
   const handleDownload = async () => {
     try {
       setDownloading(true);
+      trackEvent('download_resume_pdf', 'engagement', language);
       const fileName = language === 'pt'
         ? '[Currículo] Moacir David de Almeida Gonçalves - Software Engineer.pdf'
         : '[Resume] Moacir David de Almeida Gonçalves - Software Engineer.pdf';

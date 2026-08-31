@@ -6,6 +6,7 @@ import ptDict from '@/dictionaries/pt.json';
 import enDict from '@/dictionaries/en.json';
 import { ExternalLink, Layers } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
+import { trackEvent } from './Analytics';
 
 export default function ProjectsSection() {
   const { language } = useApp();
@@ -108,6 +109,7 @@ export default function ProjectsSection() {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => trackEvent('click_project_demo', 'engagement', project.title)}
                         className="text-xs font-semibold text-[var(--accent-cyan)] hover:text-[var(--accent-pink)] flex items-center gap-1 transition-colors"
                       >
                         <ExternalLink className="w-3.5 h-3.5" />
@@ -118,6 +120,7 @@ export default function ProjectsSection() {
                       href="https://github.com/moacirdavidag"
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() => trackEvent('click_project_github', 'engagement', project.title)}
                       className="text-xs font-semibold text-[var(--text-secondary)] hover:text-[var(--text-primary)] flex items-center gap-1 transition-colors ml-auto"
                     >
                       <GithubIcon className="w-3.5 h-3.5" />
