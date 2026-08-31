@@ -1,0 +1,212 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "hero": {
+      "greeting": "Hi, I am",
+      "role": "Full Stack & Mobile Software Engineer",
+      "tagline": "Transforming complex software challenges into scalable, elegant, and high-performance applications.",
+      "status": "Available for new projects & consulting",
+      "cta_contact": "Get in Touch",
+      "cta_resume": "Download Resume PDF",
+      "experience_badge": "Years of Experience"
+    },
+    "about": {
+      "title": "About Me & Journey",
+      "subtitle": "Results-oriented Software Engineer passionate about technology, clean architecture, and real-world impact.",
+      "bio": "Software Engineer with experience in high-concurrency, large-scale systems. I specialize in Full Stack and Mobile engineering, combining technical precision in API development and fluid UIs with a strategic product vision. Beyond coding, I enjoy playing guitar 🎸, gaming 🎮, and continuous learning.",
+      "quick_facts": {
+        "title": "Quick Facts",
+        "name_label": "Name:",
+        "age_label": "Age:",
+        "education_label": "Education:",
+        "education_val": "Systems Analysis & Software Dev — IFPB",
+        "languages_label": "Languages:",
+        "languages_val": "Portuguese (Native) | English (Conversational)",
+        "location_label": "Location:",
+        "location_val": "Brazil / Paraíba",
+        "freelance_label": "Available for Freelance:",
+        "yes": "Yes"
+      },
+      "experience_title": "Professional Experience",
+      "skills_title": "Technical Skills"
+    },
+    "projects": {
+      "title": "High-Impact Projects",
+      "subtitle": "A curated showcase of digital products, large-scale systems, and key projects I've built or led.",
+      "filter_all": "All",
+      "filter_web": "Web & APIs",
+      "filter_mobile": "Mobile",
+      "filter_freelance": "Freelance",
+      "view_project": "View Details",
+      "github_link": "GitHub Repository",
+      "live_demo": "Live Demo"
+    },
+    "contact": {
+      "title": "Let's Connect",
+      "subtitle": "Have a project in mind, a career opportunity, or want to discuss tech? Feel free to reach out!",
+      "form_name": "Your Name",
+      "form_email": "Your Email",
+      "form_subject": "Subject",
+      "form_message": "Your Message",
+      "form_submit": "Send Message",
+      "form_sending": "Sending...",
+      "success_msg": "Message sent successfully! I will reply shortly.",
+      "error_msg": "An error occurred while sending. Please try again or reach out on WhatsApp."
+    },
+    "footer": {
+      "rights": "All rights reserved.",
+      "built_with": "Built with Next.js, TypeScript & Dracula Theme."
+    }
+  },
+  "experiences": [
+    {
+      "id": "poder360",
+      "role": "Software Engineer",
+      "company": "Poder360",
+      "period": "Jul 2024 – Present",
+      "startDate": "2024-07-01",
+      "current": true,
+      "location": "Brasília, DF (Remote)",
+      "summary": "Engineering, evolution, and maintenance of digital systems and APIs powering major digital journalism platforms.",
+      "highlights": [
+        "Led key developments for the Elections 2024 special project: High-concurrency public interfaces for live election results.",
+        "Full Stack development with React, Next.js, and TypeScript focused on maximum rendering performance and scalability.",
+        "Engineered backend microservices and APIs using Node.js, Express, NestJS, and Fastify.",
+        "Built automated data scrapers and ETL pipelines in Python and Node.js for real-time data processing.",
+        "Implemented data-driven dynamic image generation for news distribution.",
+        "Evolved and maintained custom WordPress backend solutions."
+      ],
+      "techs": ["Next.js", "React", "TypeScript", "Node.js", "NestJS", "Fastify", "Python", "WordPress", "Docker"]
+    },
+    {
+      "id": "cea",
+      "role": "Full Stack Developer",
+      "company": "CEA Artes Eletrônicas",
+      "period": "Dec 2023 – May 2025",
+      "startDate": "2023-12-01",
+      "endDate": "2025-05-31",
+      "current": false,
+      "location": "São Paulo, SP (Remote)",
+      "summary": "Contributed across the full lifecycle of web and mobile software products.",
+      "highlights": [
+        "Engineered RESTful APIs and backend services in PHP, Laravel, Node.js, and NestJS backed by MySQL.",
+        "Built responsive web user interfaces using React and modern component libraries.",
+        "Developed cross-platform mobile apps using React Native.",
+        "Containerized applications with Docker and established automated CI/CD deployment pipelines."
+      ],
+      "techs": ["PHP", "Laravel", "Node.js", "NestJS", "MySQL", "React", "React Native", "Docker", "CI/CD"]
+    },
+    {
+      "id": "loopis",
+      "role": "Junior Consultant & Trainee",
+      "company": "Loopis Jr.",
+      "period": "Oct 2023 – Oct 2024",
+      "startDate": "2023-10-01",
+      "endDate": "2024-10-31",
+      "current": false,
+      "location": "Cajazeiras, PB (Hybrid)",
+      "summary": "Bridged client business demands with technical software execution at IFPB's junior enterprise.",
+      "highlights": [
+        "Developed custom web applications using React, Node.js, and Vite.",
+        "Gathered client requirements and drafted technical & commercial proposals.",
+        "Worked in Agile development sprints using Git version control."
+      ],
+      "techs": ["React", "Node.js", "Vite", "Scrum", "Git"]
+    },
+    {
+      "id": "marizopolis",
+      "role": "IT Intern (urnaSIM Creator)",
+      "company": "Marizópolis Municipal Government",
+      "period": "Mar 2022 – Sep 2023",
+      "startDate": "2022-03-01",
+      "endDate": "2023-09-30",
+      "current": false,
+      "location": "Marizópolis, PB",
+      "summary": "Provided IT infrastructure support and modern digital solutions for local public services.",
+      "highlights": [
+        "Designed, built, and deployed urnaSIM: a digital electronic voting web app utilized in public school student elections.",
+        "Supported hardware, networking, and municipal administration software systems."
+      ],
+      "techs": ["Node.js", "Express", "MongoDB", "JavaScript", "HTML/CSS"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "escriptura-ebd",
+      "title": "eScriptura — EBD Management SaaS",
+      "category": "web",
+      "role": "Founder, Creator & Lead Architect",
+      "description": "Comprehensive SaaS platform engineered for Sunday Bible School (EBD) management. Built with Next.js and Firebase to streamline student enrollment, attendance tracking, statistical reporting, and class administration.",
+      "techs": ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "SaaS"],
+      "image": "/images/projects/escriptura.webp",
+      "featured": true,
+      "link": "https://escripturaebd.com.br"
+    },
+    {
+      "id": "grao-roxo",
+      "title": "Grão Roxo Coffee Mobile App",
+      "category": "mobile",
+      "role": "Tech Lead & Mobile Architect",
+      "description": "Cross-platform mobile application developed for Cafeteria Grão Roxo. Served as Tech Lead, aligning requirements with stakeholders and designing clean React Native architecture.",
+      "techs": ["React Native", "TypeScript", "UX/UI Design", "Clean Architecture"],
+      "image": "/images/projects/grao-roxo.webp",
+      "featured": true
+    },
+    {
+      "id": "eleicoes-poder360",
+      "title": "Elections 2024 Dashboard — Poder360",
+      "category": "web",
+      "role": "Software Engineer",
+      "description": "Live election results portal for Poder360 digital news. Built for ultra-fast server-side rendering, real-time data integration, and high traffic volume.",
+      "techs": ["Next.js", "React", "TypeScript", "Realtime Data API"],
+      "image": "/images/projects/eleicoes-poder360.webp",
+      "featured": true,
+      "link": "https://eleicoes.poder360.com.br/resultados?ano=2024&turno=1"
+    },
+    {
+      "id": "urnasim",
+      "title": "urnaSIM — Electronic Voting System",
+      "category": "web",
+      "role": "Creator & Full Stack Developer",
+      "description": "Full-fledged digital ballot system engineered with Node.js and MongoDB to power transparent and educational student elections in public schools.",
+      "techs": ["Node.js", "Express", "MongoDB", "JavaScript"],
+      "image": "/images/projects/urnasim.webp",
+      "featured": true
+    },
+    {
+      "id": "semiopop",
+      "title": "semiopop — Nursing Mobile App",
+      "category": "mobile",
+      "role": "Mobile Developer / IFPB Fellow",
+      "description": "Mobile application created at IFPB to digitize standard operating procedures (SOPs) and support Nursing students and instructors.",
+      "techs": ["React Native", "Figma", "Mobile UI"],
+      "image": "/images/projects/semiopop.webp",
+      "featured": true
+    },
+    {
+      "id": "geojuazeiro",
+      "title": "GeoJuazeiro School Portal",
+      "category": "freelance",
+      "role": "Freelance Web Developer",
+      "description": "Institutional website built for GeoJuazeiro school in Bahia, featuring responsive layout and custom CMS content management.",
+      "techs": ["WordPress", "PHP", "CSS3"],
+      "image": "/images/projects/geojuazeiro.webp",
+      "featured": false
+    },
+    {
+      "id": "brasil-sun",
+      "title": "Brasil Sun Landing Page",
+      "category": "freelance",
+      "role": "Freelance Frontend Developer",
+      "description": "High-converting landing page for a solar energy enterprise with SEO optimization and quick page load speeds.",
+      "techs": ["HTML5", "CSS3", "JavaScript"],
+      "image": "/images/projects/brasil-sun.webp",
+      "featured": false
+    }
+  ]
+}

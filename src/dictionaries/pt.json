@@ -1,0 +1,212 @@
+{
+  "common": {
+    "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "hero": {
+      "greeting": "Olá, eu sou o",
+      "role": "Software Engineer Full Stack & Mobile",
+      "tagline": "Transformando desafios complexos de software em aplicações escaláveis, elegantes e de alta performance.",
+      "status": "Disponível para novos projetos & consultorias",
+      "cta_contact": "Fale Comigo",
+      "cta_resume": "Baixar Currículo PDF",
+      "experience_badge": "Anos de Experiência"
+    },
+    "about": {
+      "title": "Sobre Mim & Trajetória",
+      "subtitle": "Software Engineer orientado a resultados, apaixonado por tecnologia, arquitetura limpa e impacto real.",
+      "bio": "Engenheiro de Software com experiência em sistemas de grande escala e alta concorrência. Atuo no desenvolvimento Full Stack e Mobile, unindo precisão técnica na construção de APIs e interfaces fluidas a uma visão estratégica de produto. Fora do código, dedico meu tempo à música 🎸, jogos 🎮 e aprendizado contínuo.",
+      "quick_facts": {
+        "title": "Fatos Rápidos",
+        "name_label": "Nome:",
+        "age_label": "Idade:",
+        "education_label": "Formação:",
+        "education_val": "Análise e Desenvolvimento de Sistemas — IFPB",
+        "languages_label": "Idiomas:",
+        "languages_val": "Português (Nativo) | Inglês (Conversação)",
+        "location_label": "Localização:",
+        "location_val": "Brasil / Paraíba",
+        "freelance_label": "Disponível para Freelance:",
+        "yes": "Sim"
+      },
+      "experience_title": "Experiência Profissional",
+      "skills_title": "Competências Técnicas"
+    },
+    "projects": {
+      "title": "Projetos de Alto Impacto",
+      "subtitle": "Uma seleção de produtos digitais, aplicações de grande escala e projetos dos quais participei com orgulho.",
+      "filter_all": "Todos",
+      "filter_web": "Web & APIs",
+      "filter_mobile": "Mobile",
+      "filter_freelance": "Freelance",
+      "view_project": "Ver Detalhes",
+      "github_link": "Repositório GitHub",
+      "live_demo": "Acessar Aplicação"
+    },
+    "contact": {
+      "title": "Vamos Conversar?",
+      "subtitle": "Tem um projeto em mente, uma proposta de oportunidade ou quer apenas bater um papo sobre tecnologia?",
+      "form_name": "Seu Nome",
+      "form_email": "Seu E-mail",
+      "form_subject": "Assunto",
+      "form_message": "Sua Mensagem",
+      "form_submit": "Enviar Mensagem",
+      "form_sending": "Enviando...",
+      "success_msg": "Mensagem enviada com sucesso! Retornarei em breve.",
+      "error_msg": "Ocorreu um erro ao enviar. Tente novamente ou me chame no WhatsApp."
+    },
+    "footer": {
+      "rights": "Todos os direitos reservados.",
+      "built_with": "Desenvolvido com Next.js, TypeScript e Dracula Theme."
+    }
+  },
+  "experiences": [
+    {
+      "id": "poder360",
+      "role": "Software Engineer",
+      "company": "Poder360",
+      "period": "Jul de 2024 – Atual",
+      "startDate": "2024-07-01",
+      "current": true,
+      "location": "Brasília, DF (Remoto)",
+      "summary": "Desenvolvimento, evolução e manutenção de sistemas e produtos digitais que sustentam a operação editorial e plataformas de grande público.",
+      "highlights": [
+        "Desenvolvimento do projeto especial Eleições 2024: Interfaces públicas de acompanhamento de resultados eleitorais em tempo real sob tráfego massivo.",
+        "Desenvolvimento Full Stack com React, Next.js e TypeScript para aplicações web de alto desempenho.",
+        "Construção e manutenção de APIs e serviços backend em Node.js, Express, NestJS e Fastify.",
+        "Desenvolvimento de scrapers, automações e pipelines de ETL em Python e Node.js para processamento dinâmico de dados.",
+        "Implementação de soluções para geração dinâmica de imagens e conteúdos orientados a dados para distribuição editorial.",
+        "Manutenção evolutiva e customização de aplicações e integrações WordPress."
+      ],
+      "techs": ["Next.js", "React", "TypeScript", "Node.js", "NestJS", "Fastify", "Python", "WordPress", "Docker"]
+    },
+    {
+      "id": "cea",
+      "role": "Desenvolvedor Full Stack",
+      "company": "CEA Artes Eletrônicas",
+      "period": "Dez de 2023 – Mai de 2025",
+      "startDate": "2023-12-01",
+      "endDate": "2025-05-31",
+      "current": false,
+      "location": "São Paulo, SP (Remoto)",
+      "summary": "Atuação em todo o ciclo de vida das aplicações web e mobile da empresa, da concepção à entrega em produção.",
+      "highlights": [
+        "Desenvolvimento de APIs e microsserviços em PHP, Laravel, Node.js e NestJS com MySQL.",
+        "Criação de interfaces web responsivas e modernas em React com bibliotecas de UI.",
+        "Desenvolvimento e manutenção de aplicativos mobile em React Native.",
+        "Dockerização de aplicações e estruturação de esteiras de CI/CD para automação de deploy."
+      ],
+      "techs": ["PHP", "Laravel", "Node.js", "NestJS", "MySQL", "React", "React Native", "Docker", "CI/CD"]
+    },
+    {
+      "id": "loopis",
+      "role": "Consultor Júnior & Trainee",
+      "company": "Loopis Jr.",
+      "period": "Out de 2023 – Out de 2024",
+      "startDate": "2023-10-01",
+      "endDate": "2024-10-31",
+      "current": false,
+      "location": "Cajazeiras, PB (Híbrido)",
+      "summary": "Atuação estratégica e técnica na empresa júnior do IFPB, conectando a área comercial à execução dos projetos.",
+      "highlights": [
+        "Desenvolvimento de sistemas web com React, Node.js e Vite.",
+        "Levantamento e análise de requisitos técnicos com clientes e elaboração de propostas comerciais.",
+        "Trabalho com metodologias ágeis (Scrum/Kanban) e versionamento colaborativo via Git."
+      ],
+      "techs": ["React", "Node.js", "Vite", "Scrum", "Git"]
+    },
+    {
+      "id": "marizopolis",
+      "role": "Estagiário de TI (Projeto urnaSIM)",
+      "company": "Prefeitura Municipal de Marizópolis",
+      "period": "Mar de 2022 – Set de 2023",
+      "startDate": "2022-03-01",
+      "endDate": "2023-09-30",
+      "current": false,
+      "location": "Marizópolis, PB",
+      "summary": "Suporte técnico e modernização dos serviços tecnológicos da prefeitura.",
+      "highlights": [
+        "Idealizou, desenvolveu e implantou o urnaSIM, sistema web de votação eletrônica utilizado em eleições estudantis na rede pública de ensino.",
+        "Suporte técnico a computadores, infraestrutura de redes e sistemas da administração municipal."
+      ],
+      "techs": ["Node.js", "Express", "MongoDB", "JavaScript", "HTML/CSS"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "escriptura-ebd",
+      "title": "eScriptura — Gestão de EBD",
+      "category": "web",
+      "role": "Fundador, Criador & Lead Architect",
+      "description": "SaaS completo para gestão e modernização de Escolas Bíblicas Dominicais (EBD). Plataforma desenvolvida com Next.js e Firebase, permitindo controle de matrículas, frequência, relatórios estatísticos e gestão financeira de alunos e professores.",
+      "techs": ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "SaaS"],
+      "image": "/images/projects/escriptura.webp",
+      "featured": true,
+      "link": "https://escripturaebd.com.br"
+    },
+    {
+      "id": "grao-roxo",
+      "title": "App Mobile Cafeteria Grão Roxo",
+      "category": "mobile",
+      "role": "Tech Lead & Arquiteto Mobile",
+      "description": "Aplicativo mobile desenvolvido em grupo voluntário para a Cafeteria Grão Roxo. Liderança técnica do time de devs, alinhamento com stakeholders, definição do fluxo UX/UI e arquitetura limpa em React Native.",
+      "techs": ["React Native", "TypeScript", "UX/UI Design", "Clean Architecture"],
+      "image": "/images/projects/grao-roxo.webp",
+      "featured": true
+    },
+    {
+      "id": "eleicoes-poder360",
+      "title": "Painel de Apuração Eleições 2024 — Poder360",
+      "category": "web",
+      "role": "Software Engineer",
+      "description": "Plataforma pública de acompanhamento da apuração dos votos das Eleições 2024 do jornal Poder360. Foco em renderização ultra-rápida, dados em tempo real e alta disponibilidade.",
+      "techs": ["Next.js", "React", "TypeScript", "Realtime Data API"],
+      "image": "/images/projects/eleicoes-poder360.webp",
+      "featured": true,
+      "link": "https://eleicoes.poder360.com.br/resultados?ano=2024&turno=1"
+    },
+    {
+      "id": "urnasim",
+      "title": "urnaSIM — Votação Eletrônica Escolar",
+      "category": "web",
+      "role": "Criador & Desenvolvedor Full Stack",
+      "description": "Sistema completo de urna eletrônica digital desenvolvido com Node.js e MongoDB para promover processos eleitorais educativos e transparentes nas escolas públicas.",
+      "techs": ["Node.js", "Express", "MongoDB", "JavaScript"],
+      "image": "/images/projects/urnasim.webp",
+      "featured": true
+    },
+    {
+      "id": "semiopop",
+      "title": "semiopop — App de Enfermagem",
+      "category": "mobile",
+      "role": "Bolsista / Desenvolvedor Mobile",
+      "description": "Aplicativo mobile desenvolvido no IFPB para digitalizar procedimentos operacionais padrão (POPs) e auxiliar alunos e professores dos cursos de Enfermagem.",
+      "techs": ["React Native", "Figma", "Mobile UI"],
+      "image": "/images/projects/semiopop.webp",
+      "featured": true
+    },
+    {
+      "id": "geojuazeiro",
+      "title": "Portal Escola GeoJuazeiro",
+      "category": "freelance",
+      "role": "Desenvolvedor Web Freelance",
+      "description": "Portal institucional desenvolvido para a escola GeoJuazeiro na Bahia, com layout responsivo e gerenciamento de conteúdo customizado.",
+      "techs": ["WordPress", "PHP", "CSS3"],
+      "image": "/images/projects/geojuazeiro.webp",
+      "featured": false
+    },
+    {
+      "id": "brasil-sun",
+      "title": "Landing Page Brasil Sun",
+      "category": "freelance",
+      "role": "Desenvolvedor Frontend Freelance",
+      "description": "Landing page de alta conversão para empresa do ramo de energia solar, com otimização SEO e carregamento veloz.",
+      "techs": ["HTML5", "CSS3", "JavaScript"],
+      "image": "/images/projects/brasil-sun.webp",
+      "featured": false
+    }
+  ]
+}
