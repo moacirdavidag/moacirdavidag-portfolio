@@ -3,8 +3,10 @@
   publish = ".next"
 
 [build.environment]
-  # O e-mail e o host SMTP aparecem no site como contato público — não são segredos reais
-  SECRETS_SCAN_OMIT_KEYS = "SMTP_USER,SMTP_HOST"
+  # NEXT_PUBLIC_* vars are intentionally public (embedded in client bundle by Next.js)
+  # SMTP_USER = public contact email displayed on the site
+  # SMTP_HOST = public mail server hostname
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_GA_ID,SMTP_USER,SMTP_HOST"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
